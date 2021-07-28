@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color:rgb(70, 142, 246);
+    --primary-color-darker: rgb(70, 111, 246);
+    --primary-color-active: rgb(124, 124, 124);
+
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+p {
+    text-align: end;
+    /* background-color: var( --primary-color-darker); */
+    margin: .5rem 2rem .5rem -1rem;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    /* topo | horizontal | inferior */
+    margin: 2rem auto 2em;;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+select#saltos{
+    width: 300px;
+}
+
+.container {
+    max-width: 640px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: stretch
+}
+
+#res {
+    width: 60%;
+}
+
+.inputs{
+    padding: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.result {
+    width: 40%;
+}
+
+.result p {
+    padding: .5rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem 0 .5rem 0;
+    margin: 0;
+    color: #fff;
+}
+
+label {
+    width: 7%;
+    margin: -1.5rem 8px 0px 0px;
+}
+
+input, button{
+    width: 30%;
+}
+
+
+.inputs input {
+    font-size: 1rem;
+    /* topo | direita | inferior | esquerda */
+    margin: .1rem 4rem 0 -3rem;
+
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.btn {
+    margin: 0 ;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .5rem 0;
+    margin: 0 .5rem;
+    cursor: pointer;
+}   
+
+.btn:hover {
+    background: var(--primary-color-darker);
+}
+
+.btn:focus {
+    background: var(--primary-color-darker);
+}
+
+.btn:active {
+    background: var(--primary-color-active);
+}
+
